@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+@import "variables";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  width: 100%;
+  background-color: $primary-color;
+  color: white;
+
+    > div {
+    @include width-80;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .sections {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  
+    li {
+      list-style: none;
+      padding-top: 10px;
+      font-size: 1.2rem;
+      transition: transform 500ms ease;
+  
+      a {
+        color: black;
+        text-decoration: none;
+        color: white;
+      }
+  
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  background: $secondary-color;
+  color: white;
+}
+
+.hello {
+  margin: auto;
+  border: 2px solid white;
+  padding: 30px;
+
+  span {
+    margin-top: 50px;
+    display: block;
+    background: $accent-color;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: $secondary-color;
+    font-weight: 600;
+  }
+}
+
+.my-face {
+  width: 40%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+main {
+  width: 100%;
+  background: $dark-color;
+  background: linear-gradient(40deg, $dark-color 36%, $light-color 62%);
+}
+
+.container-about {
+    @include width-80;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  > img {
+    width: 40%;
+    align-self: center;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    align-self: center;
+    border: 2px solid $accent-color;
+    padding: 20px;
+  }
+}
+
+.noemi, .simple, .netocoin{
+  width: 100%;
+  background: $dark-color;
+  background: linear-gradient(157deg, $dark-color 34%, $light-color 61%);
+  color: white;
+  padding: 50px 0;
+
+  h2 {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .noemi-container, .simple-container, .netocoin-container {
+    display: flex;
+    @include width-80;
+    gap: 10%;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-self: center;
+    }
+  }
+}
+
+.btn-visit {
+  background: $accent-color;
+  padding: 10px;
+  border: none;
+  transition: transform 500ms ease;
+
+  > a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.container-of-screen {
+  @include long-screen;
+}
+
+.ink-house, .game {
+    width: 100%;
+    background: rgb(120,119,125);
+    background: linear-gradient(157deg, rgba(120,119,125,1) 34%, rgba(0,0,0,1) 61%);
+}
+
+.ink-house-container, .game-container {
+    @include width-80;
+    padding: 50px 0;
+    > div {
+        display: flex;
+        gap: 10%;
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 30px;
+            align-self: center;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    > img {
+        width: 100%;
+    }
+  }
+  
+  .active {
+    display: block;
+  }
+
+  .container-of-gif {
+    width: 50%;
+  }
+
+.other {
+    width: 100%;
+    background: $light-color;
+    color: white;
+    > div {
+        @include width-80;
+        padding: 50px 0;
+    }
+}
+
+footer {
+    width: 100%;
+    background: black;
+    padding: 30px 0;
+    .footer-container {
+        @include width-80;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.tel-email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    a {
+        padding-left: 4px;
+        color: #baa122;
+        text-decoration: none;
+    }
+}
+
+.socials {
+    display: flex;
+    // width: 30%;
+    gap: 15%;
+    align-self: center;
+    a {
+        color: white;
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    html{
+        font-size: 12px;
+    }
+    .container-of-screen {
+        height: 250px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-about > img {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        .logo {
+            font-size: 1.5rem;
+        }
+        .sections {
+            width: auto;
+        }
+    }
+    nav >div {
+        padding: 4px;
+        ul li {
+            padding-left: 8px;
+        }
+    }
+    .hello {
+        padding: 10px;
+    }
+    .netocoin .netocoin-container {
+        flex-direction: column;
+        gap: 20px;
+        .container-of-gif {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 10px;
+    }
+    footer .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        a svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .hello {
+        border: none;
+    }
+}

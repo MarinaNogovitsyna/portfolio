@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import '../src/css/index.css';
+import Header from "./components/Header";
+import About from "./components/About";
+import Noemi from "./components/Noemi";
+import InkHouse from "./components/InkHouse";
+import Simple from "./components/Simple";
+import Game from "./components/Game";
+import Netocoin from "./components/Netocoin";
+import Other from "./components/Other";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <About />
+      <Noemi />
+      <InkHouse />
+      <Simple />
+      <Game />
+      <Netocoin />
+      <Other />
+      <Footer />
     </div>
   );
 }

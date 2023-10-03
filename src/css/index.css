@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  width: 100%;
+  background-color: #595656;
+  color: white;
+}
+nav > div {
+  width: 80%;
+  margin: auto;
+  padding: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .logo {
+  font-size: 2rem;
+}
+nav .sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+nav .sections li {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+nav .sections li a {
+  color: black;
+  text-decoration: none;
+  color: white;
+}
+nav .sections li:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #0d0c0c;
+  color: white;
+}
+
+.hello {
+  margin: auto;
+  border: 2px solid white;
+  padding: 30px;
+}
+.hello span {
+  margin-top: 50px;
+  display: block;
+  background: #c9b54d;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #0d0c0c;
+  font-weight: 600;
+}
+
+.my-face {
+  width: 40%;
+  height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(40deg, rgb(0, 0, 0) 36%, rgb(120, 119, 125) 62%);
+}
+
+.container-about {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.container-about > img {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.container-about .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid #c9b54d;
+  padding: 20px;
+}
+
+.noemi, .simple, .netocoin {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(157deg, rgb(0, 0, 0) 34%, rgb(120, 119, 125) 61%);
+  color: white;
+  padding: 50px 0;
+}
+.noemi h2, .simple h2, .netocoin h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.noemi .noemi-container, .noemi .simple-container, .noemi .netocoin-container, .simple .noemi-container, .simple .simple-container, .simple .netocoin-container, .netocoin .noemi-container, .netocoin .simple-container, .netocoin .netocoin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 10%;
+}
+.noemi .noemi-container > div, .noemi .simple-container > div, .noemi .netocoin-container > div, .simple .noemi-container > div, .simple .simple-container > div, .simple .netocoin-container > div, .netocoin .noemi-container > div, .netocoin .simple-container > div, .netocoin .netocoin-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.btn-visit {
+  background: #c9b54d;
+  padding: 10px;
+  border: none;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+.btn-visit > a {
+  text-decoration: none;
+  color: #0d0c0c;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.btn-visit:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container-of-screen {
+  height: 400px;
+  /* width: 50%; */
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow-y: scroll;
+}
+.container-of-screen::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(120, 119, 125);
+}
+.container-of-screen::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c9b54d;
+}
+.container-of-screen::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+.container-of-screen .screen {
+  width: 100%;
+}
+
+.ink-house, .game {
+  width: 100%;
+  background: rgb(120, 119, 125);
+  background: linear-gradient(157deg, rgb(120, 119, 125) 34%, rgb(0, 0, 0) 61%);
+}
+
+.ink-house-container, .game-container {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+.ink-house-container > div, .game-container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10%;
+}
+.ink-house-container > div > div, .game-container > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  gap: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+.slide > img {
+  width: 100%;
+}
+
+.active {
+  display: block;
+}
+
+.container-of-gif {
+  width: 50%;
+}
+
+.other {
+  width: 100%;
+  background: rgb(120, 119, 125);
+  color: white;
+}
+.other > div {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+footer {
+  width: 100%;
+  background: black;
+  padding: 30px 0;
+}
+footer .footer-container {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tel-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+.tel-email a {
+  padding-left: 4px;
+  color: #baa122;
+  text-decoration: none;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.socials a {
+  color: white;
+}
+.socials a svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  .container-of-screen {
+    height: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .container-about > img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  nav .logo {
+    font-size: 1.5rem;
+  }
+  nav .sections {
+    width: auto;
+  }
+  nav > div {
+    padding: 4px;
+  }
+  nav > div ul li {
+    padding-left: 8px;
+  }
+  .hello {
+    padding: 10px;
+  }
+  .netocoin .netocoin-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .netocoin .netocoin-container .container-of-gif {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+  footer .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  footer .footer-container a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .hello {
+    border: none;
+  }
+}
