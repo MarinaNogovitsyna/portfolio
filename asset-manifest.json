@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.101dbefd.css",
+    "main.js": "/static/js/main.55ff653c.js",
+    "static/media/Анимация.gif": "/static/media/Анимация.88ed9ec877f62a59ad18.gif",
+    "static/media/marinanogovitsyna.github.io_Ink-House_ (2).png": "/static/media/marinanogovitsyna.github.io_Ink-House_ (2).40ad07bc4c8037a62032.png",
+    "static/media/marinanogovitsyna.github.io_Noemi_.png": "/static/media/marinanogovitsyna.github.io_Noemi_.534a86efdf8e6fba0148.png",
+    "static/media/marinanogovitsyna.github.io_Simple_.png": "/static/media/marinanogovitsyna.github.io_Simple_.0ee748b84303a3cf217f.png",
+    "static/media/photo_2023-09-30_15-23-12 (2).jpg": "/static/media/photo_2023-09-30_15-23-12 (2).37066439e682fde47fe5.jpg",
+    "static/media/PeGFtNTpiVQ.jpg": "/static/media/PeGFtNTpiVQ.6a2a306102f9082d204e.jpg",
+    "static/media/tac3.png": "/static/media/tac3.b99e334d9c4d0b2e5f30.png",
+    "static/media/tac2.png": "/static/media/tac2.9c0d517e3cfe11f8149e.png",
+    "static/media/tac1.png": "/static/media/tac1.9bf3cd52e552ca25d373.png",
+    "index.html": "/index.html",
+    "main.101dbefd.css.map": "/static/css/main.101dbefd.css.map",
+    "main.55ff653c.js.map": "/static/js/main.55ff653c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.101dbefd.css",
+    "static/js/main.55ff653c.js"
+  ]
+}
