@@ -4,7 +4,6 @@ import NoemiScreen from '../img/marinanogovitsyna.github.io_Noemi_.png'
 const Noemi = () => {
     return (
         <section id='noemi' className='noemi'>
-            <h2>Примеры работ</h2>
             <div className='noemi-container'>
                 <div>
                     <span>

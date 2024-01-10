@@ -138,10 +138,6 @@ main {
   color: white;
   padding: 50px 0;
 }
-.noemi h2, .simple h2, .netocoin h2 {
-  text-align: center;
-  padding-bottom: 30px;
-}
 .noemi .noemi-container, .noemi .simple-container, .noemi .netocoin-container, .simple .noemi-container, .simple .simple-container, .simple .netocoin-container, .netocoin .noemi-container, .netocoin .simple-container, .netocoin .netocoin-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,24 +204,34 @@ main {
   width: 100%;
 }
 
-.ink-house, .game {
+.ink-house, .cinema, .game {
   width: 100%;
   background: rgb(120, 119, 125);
   background: linear-gradient(157deg, rgb(120, 119, 125) 34%, rgb(0, 0, 0) 61%);
 }
+.ink-house h2, .cinema h2, .game h2 {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
 
-.ink-house-container, .game-container {
+.cinema-container span > a {
+  text-decoration: none;
+  color: #baa122;
+}
+
+.ink-house-container, .cinema-container, .game-container {
   width: 80%;
   margin: auto;
   padding: 50px 0;
 }
-.ink-house-container > div, .game-container > div {
+.ink-house-container > div, .cinema-container > div, .game-container > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10%;
 }
-.ink-house-container > div > div, .game-container > div > div {
+.ink-house-container > div > div, .cinema-container > div > div, .game-container > div > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,14 +358,14 @@ footer .footer-container {
   .hello {
     padding: 10px;
   }
-  .netocoin .netocoin-container {
+  .netocoin, .cinema, .cinema-container, .netocoin-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
   }
-  .netocoin .netocoin-container .container-of-gif {
+  .netocoin .container-of-gif, .cinema .container-of-gif, .cinema-container .container-of-gif, .netocoin-container .container-of-gif {
     width: 100%;
   }
 }

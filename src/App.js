@@ -2,6 +2,7 @@ import React from "react";
 import '../src/css/index.css';
 import Header from "./components/Header";
 import About from "./components/About";
+import Cinema from "./components/Cinema";
 import Noemi from "./components/Noemi";
 import InkHouse from "./components/InkHouse";
 import Simple from "./components/Simple";
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Header />
       <About />
+      <Cinema />
       <Noemi />
       <InkHouse />
       <Simple />

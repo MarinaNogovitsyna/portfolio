@@ -114,11 +114,6 @@ main {
   color: white;
   padding: 50px 0;
 
-  h2 {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-
   .noemi-container, .simple-container, .netocoin-container {
     display: flex;
     @include width-80;
@@ -155,13 +150,25 @@ main {
   @include long-screen;
 }
 
-.ink-house, .game {
+.ink-house, .cinema, .game {
     width: 100%;
     background: rgb(120,119,125);
     background: linear-gradient(157deg, rgba(120,119,125,1) 34%, rgba(0,0,0,1) 61%);
+    h2 {
+      text-align: center;
+      padding-top: 30px;
+      color: white
+    }
 }
 
-.ink-house-container, .game-container {
+.cinema-container {
+  span > a {
+    text-decoration: none;
+    color: #baa122;
+  }
+}
+
+.ink-house-container, .cinema-container, .game-container {
     @include width-80;
     padding: 50px 0;
     > div {
@@ -279,7 +286,7 @@ footer {
     .hello {
         padding: 10px;
     }
-    .netocoin .netocoin-container {
+    .netocoin, .cinema, .cinema-container, .netocoin-container {
         flex-direction: column;
         gap: 20px;
         .container-of-gif {
